@@ -60,7 +60,7 @@ export default function User() {
       value = {name}
       onChange= {(e) => setName(e.target.value)}/>
     
-      <TextField id="outlined-basic" label="Adress" variant="outlined" fullWidth 
+      <TextField id="outlined-basic" label="Address" variant="outlined" fullWidth 
       value = {address}
       onChange= {(e) => setAddress(e.target.value)}/>
 
@@ -92,7 +92,30 @@ export default function User() {
 }
 </Paper>
 
-        
+    
       </Container>
-  );
+ );
+
+
+/* BEGINNING OF FORM BUILDER CODE, MAY BREAK THINGS */
+// const { register, handleSubmit, watch, formState: { errors } } = useForm();
+// const onSubmit = data => console.log(data);
+// console.log(watch("example")); // watch input value by passing the name of it
+
+// return (
+//   /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
+//   <div>
+//       <div>Select your desired fields:</div>
+//       <select {...register("Field", { required: true })}>
+//         <option value="Text field">Text Field</option>
+//         <option value="Drop down selection">Drop-Down Selection</option>
+//         <option value="Radio selection">Radio Selection</option>
+//         <option value="Phone number">Phone Number</option>
+//       </select>
+      
+
+//       <br /><button value="Add element">Add Element</button>
+//       <br /><br /><button value="Finalize webform">Finalize Webform</button>
+//     </div>
+// );
 }
